@@ -2,42 +2,71 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <section id="home" className='min-h-screen grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10 px-5 md:px-20 xl:px-50 py-10'>
-            <div className='space-y-3 order-2 lg:order-1'>
-                <div className='mb-5'>
-                    <h2 className='text-white font-bold text-5xl'>Hi, Saya <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400'>Hendri Setiadi Darmoko</span></h2>
-                    <p className='text-blue-200 font-medium text-lg md:text-xl mt-1'>Full-Stack Developer</p>
+        <section id="home" className='mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-10 px-5 py-28 md:px-10 lg:grid-cols-2 lg:px-12 xl:px-16 scroll-mt-28'>
+            <div className='order-2 space-y-7 lg:order-1'>
+                <div className='inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur-sm'>
+                    <span className='h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.8)]' />
+                    Available to work and collaborate
                 </div>
 
-                <p className='text-blue-200 font-base text-md '>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas magni, ab aliquam nisi harum atque in rerum quae, ipsam commodi tempora explicabo assumenda voluptates distinctio perspiciatis obcaecati minima aspernatur ad?
+                <div className='space-y-4'>
+                    <h2 className='max-w-3xl text-4xl font-semibold leading-tight text-white md:text-5xl xl:text-6xl'>
+                        Hi, saya{' '}
+                        <span className='bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent'>
+                            Hendri Setiadi Darmoko
+                        </span>
+                    </h2>
+                    <p className='text-lg font-medium text-cyan-200 md:text-xl'>
+                        Web Developer
+                    </p>
+                </div>
+
+                <p className='max-w-2xl text-base leading-8 text-slate-300 md:text-lg'>
+                    Saya membangun website yang modern, rapi, dan mudah dipakai, dengan fokus
+                    pada performa, detail visual, dan pengalaman pengguna yang terasa premium.
                 </p>
-                <div className='flex flex-row flex-wrap gap-5 items-center mt-5'>
+
+                <div className='flex flex-row flex-wrap items-center gap-4 pt-2'>
                     <a
                         href="/Hendri Setiadi Darmoko_CV_Download.pdf"
                         download
-                        className='bg-linear-to-r from-blue-600 to-cyan-600 rounded-2xl shadow-xl text-white font-semibold py-2 px-5 transform transition duration-300 ease-in-out hover:scale-105 active:scale-95 cursor-pointer inline-block w-[160px] text-center'
+                        className='inline-block w-[170px] rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 text-center font-semibold text-white shadow-[0_18px_35px_rgba(8,145,178,0.25)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_50px_rgba(8,145,178,0.35)] active:scale-95'
                     >
                         Download CV
                     </a>
-                    <a href='https://github.com/hendrisetiadidarmoko' className="w-[160px] bg-white/10 backdrop-blur-md border border-white/20
-                text-white font-semibold py-2 px-5 rounded-2xl
-                transition duration-300 transform
-                hover:bg-white/20 hover:scale-105 active:scale-95 cursor-pointer text-center">
+                    <a
+                        href='https://github.com/hendrisetiadidarmoko'
+                        className='inline-flex w-[160px] items-center justify-center rounded-full border border-white/15 bg-white/10 px-5 py-3 font-semibold text-white backdrop-blur-md transition duration-300 hover:-translate-y-0.5 hover:bg-white/15 hover:scale-105 active:scale-95'
+                    >
                         Lihat Proyek
                     </a>
                 </div>
+
+                <div className='grid max-w-xl grid-cols-3 gap-3 pt-4'>
+                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
+                        <p className='text-2xl font-semibold text-white'>5+</p>
+                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Project</p>
+                    </div>
+                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
+                        <p className='text-2xl font-semibold text-white'>2+</p>
+                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Stack</p>
+                    </div>
+                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
+                        <p className='text-2xl font-semibold text-white'>1x</p>
+                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Style</p>
+                    </div>
+                </div>
             </div>
-            <div className="flex justify-center items-center order-1 lg:order-2">
+            <div className="order-1 flex items-center justify-center lg:order-2">
                 <div className="relative group">
 
-                    <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-r from-cyan-500/25 via-sky-500/15 to-blue-500/25 blur-3xl opacity-70 transition duration-500 group-hover:opacity-100"></div>
 
-                    <div className="relative w-72 h-72 self-end">
+                    <div className="relative h-80 w-80 md:h-96 md:w-96">
                         <img
                             src="/Foto_hendri.png"
                             alt="Hendri"
-                            className="w-full h-full rounded-full border-4 border-white/10 shadow-2xl object-cover transition duration-500 group-hover:scale-105 translate-y-6"
+                            className="h-full w-full rounded-[2.5rem] border border-white/10 object-cover shadow-[0_30px_80px_rgba(2,6,23,0.5)] transition duration-500 group-hover:scale-[1.02]"
                         />
                     </div>
                 </div>

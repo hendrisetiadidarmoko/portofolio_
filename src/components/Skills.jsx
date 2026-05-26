@@ -23,23 +23,27 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className='min-h-screen flex flex-col justify-center py-10'>
+    <section id="skills" className='mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-5 py-20 md:px-10 lg:px-12 scroll-mt-28'>
       <div className='flex flex-col items-center justify-center'>
-        <h2 className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400 text-xl md:text-4xl font-bold text-center'>
-        Skills
+        <span className='rounded-full border border-cyan-400/20 bg-white/5 px-4 py-2 text-sm text-cyan-200 backdrop-blur-sm'>
+          Skills
+        </span>
+        <h2 className='mt-4 max-w-2xl text-center text-3xl font-semibold text-white md:text-5xl'>
+          Toolset yang saya pakai untuk membangun produk yang rapi dan kuat.
         </h2>
-        <div className='w-24 h-1 mt-2 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400'></div>
       </div>
       
 
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 px-5'>
+      <div className='grid grid-cols-2 gap-5 pt-12 md:grid-cols-4 xl:grid-cols-5'>
         {skills.map((skill, index) => (
           <div 
             key={index}
-            className='flex flex-col items-center justify-center gap-3 bg-blue-500/20 backdrop-blur-md border border-blue-300/30 text-white font-semibold py-5 px-5 rounded-2xl transition duration-300 transform hover:bg-blue-500/30 hover:scale-105 active:scale-95'
+            className='group flex flex-col items-center justify-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/5 px-5 py-6 text-white shadow-[0_16px_40px_rgba(2,6,23,0.2)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/10'
           >
-            {skill.icon}
-            <p>{skill.name}</p>
+            <div className='transition duration-300 group-hover:scale-110'>
+              {skill.icon}
+            </div>
+            <p className='font-medium tracking-wide text-slate-200'>{skill.name}</p>
           </div>
         ))}
       </div>
