@@ -42,20 +42,6 @@ const Home = () => {
                     </a>
                 </div>
 
-                <div className='grid max-w-xl grid-cols-3 gap-3 pt-4'>
-                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
-                        <p className='text-2xl font-semibold text-white'>5+</p>
-                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Project</p>
-                    </div>
-                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
-                        <p className='text-2xl font-semibold text-white'>2+</p>
-                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Stack</p>
-                    </div>
-                    <div className='rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-md'>
-                        <p className='text-2xl font-semibold text-white'>1x</p>
-                        <p className='text-xs uppercase tracking-[0.2em] text-slate-400'>Style</p>
-                    </div>
-                </div>
             </div>
             <div className="order-1 flex items-center justify-center lg:order-2">
                 <div className="relative group">

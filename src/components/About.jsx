@@ -13,7 +13,8 @@ const About = () => {
       </div>
 
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="space-y-5 rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_rgba(2,6,23,0.25)] backdrop-blur-md">
+        <div>
+          <div className="space-y-5 rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_rgba(2,6,23,0.25)] backdrop-blur-md">
           <p className="leading-relaxed text-slate-300">
             Saya adalah seorang Web Developer yang memiliki minat dalam pengembangan aplikasi berbasis web.
             Saya terbiasa menggunakan Laravel dan React untuk membangun sistem yang efisien, terstruktur,
@@ -24,18 +25,9 @@ const About = () => {
             Selain pengembangan fitur, saya juga terbiasa bekerja dengan database, optimasi query,
             serta alur kerja yang rapi agar aplikasi terasa stabil dan siap dipakai jangka panjang.
           </p>
-
-          <div className="grid grid-cols-2 gap-4 pt-2">
-            <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-              <p className="text-2xl font-semibold text-white">5+</p>
-              <p className="text-sm text-slate-400">Project utama</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-              <p className="text-2xl font-semibold text-white">2+</p>
-              <p className="text-sm text-slate-400">Stack utama</p>
-            </div>
-          </div>
         </div>
+        </div>
+        
 
         <div className="space-y-6 rounded-[2rem] border border-white/10 bg-slate-950/50 p-8 shadow-[0_20px_60px_rgba(2,6,23,0.25)] backdrop-blur-md">
           <div className="space-y-6">
